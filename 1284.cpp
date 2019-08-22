@@ -1,0 +1,19 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+string s;
+
+int main() {
+        ios_base::sync_with_stdio(0); cin.tie(0);
+    while(true) {
+        int len = 1;
+        cin >> s;
+        if(s == "0") break;
+        for(char &c : s) {
+            if(c == '1') len += 3;
+            else if(c == '0') len += 5;
+            else len += 4;
+        }
+        cout << len << '\n';
+    }
+}
