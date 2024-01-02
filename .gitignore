@@ -1,0 +1,7 @@
+*.dSYM
+.vscode
+.idea
+cmake-build-debug
+
+a.out
+test.cpp
